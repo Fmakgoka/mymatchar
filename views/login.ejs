@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login form</title>
+    <link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+        <form action="login.php" method = "post" >
+                <table align = "center"   width=400>
+                    <tr align = center>
+                        <td colspan = "8">
+                        <h1>Matcha</h1>
+                            <h2>Login here!</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                         <td align = "right"><strong>Email :</strong></td>
+                         <td><input type="text" name="user_email" placeholder="enter your email" required></td>
+                    </tr>
+                    <tr>
+                         <td align = "right"><strong>Password :</strong></td>
+                         <td><input type="password" name="user_password" placeholder="enter your password" required></td>
+                    </tr>
+                     <td align = "center" colspan = "8"><input type= "submit" name ="login-btn" value= "Login!"></td>
+                     <tr>
+                        <td class="psw">Forgot <a href="#">password?</a></td>
+                     </tr>
+                     <div>
+                         
+                     </div>
+                </table>
+            </form>
+            <center><h3>Not a User?<a href= "registration.html">register here</a></h3></center>
+        </body>
+</body>
+</html>

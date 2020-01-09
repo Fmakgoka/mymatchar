@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+        <form action = "/register" method="post">
+            <table align = "center" width=400>
+                <tr align = center>
+                    <td colspan = "8">
+                        <h2>Register here!</h2>
+                    </td>
+                </tr>
+                <tr>
+                     <td align = "right"><strong>Enter Name :</strong></td>
+                     <td><input type="text" name= "userName" placeholder="Enter your name" required ="required"></td>
+                </tr>
+                <tr>
+                        <td align = "right"><strong>Enter last name :</strong></td>
+                        <td><input type="text" name= "lastName" placeholder="Enter your name" required ="required"></td>
+                   </tr>
+                <tr>
+                     <td align = "right"><strong>Email :</strong></td>
+                     <td><input type="email" name="userEmail" placeholder="Enter your email" required ="required"></td>
+                </tr>
+                 <!-- <tr>
+                     <td align = "right"><strong>gender</strong></td>
+                    <td>                     
+                         <select name="gender" id="gender" class="form-control">
+                            <option value="male">Male</option>
+                            <option value="male">Female</option>
+                        </select>
+                    </td>
+                </tr> -->
+                <tr>
+                     <td align = "right"><strong>Password :</strong></td>
+                     <td><input type="password" name="userPassword" placeholder="Enter your password" required ="required"></td>
+                </tr>
+                <tr>
+                     <td align = "right"><strong>Re Enter Pass :</strong></td>
+                     <td><input type="password" name="cuserPassword" placeholder="Confrim your password" required ="required"></td>
+                </tr> 
+                 <td align = "center" colspan = "8"><input type="submit" name="register" value="Register Now!"></td>
+            </table>
+            <label>Gender</label>
+            <select name="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="lesbian">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+        </form>
+        <center><h3>Alreadey Registered? <a href= "login.html">login here</a></h3></center>
+    
+</body>
+</html>

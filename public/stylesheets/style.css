@@ -1,0 +1,16 @@
+body{
+  background-image: url(/images/webImage.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+/* modal*/
+.registerButton{
+  text-align: center;
+}
+.intro{
+  text-align: center;
+
+}
