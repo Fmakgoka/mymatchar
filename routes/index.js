@@ -16,6 +16,11 @@ router.get('/forgotpsswrd', function(req, res, next){
   res.render('forgotpsswrd');
 });
 
+/* GET login page. */
+router.get('/', function(req, res, next) {
+  res.render('verify');
+});
+
 // /* GET register page. */
 // router.get('/register', function(req, res, next) {
 //   res.render('/register', { title: 'Express' });

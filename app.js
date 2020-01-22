@@ -12,6 +12,8 @@ var loginRouter = require('./routes/login');
 var forgotpsswrdRouter = require('./routes/forgotpsswrd');
 var registerRouter = require('./routes/register');
 var homeRouter = require('./routes/home');
+var profileRouter = require('./routes/profile');
+var verifyRouter = require('./routes/verify');
 let port = 3000;
 var app = express();
 
@@ -40,10 +42,13 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/forgotpsswrd', forgotpsswrdRouter);
 app.use('/home',homeRouter);
+app.use('/profile',profileRouter);
+app.use('/verify', verifyRouter);
 
 app.post('/register', registerRouter.register);
 app.post('/login', loginRouter.login);
 app.post('/forgotpsswrd', forgotpsswrdRouter.forgotpsswrd);
+app.post('/profile', profileRouter.profile);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
