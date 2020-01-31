@@ -18,18 +18,19 @@ con.connect(function (err) {
 				password VARCHAR(255), \
 				gender VARCHAR(20),\
 				verified tinyint(1) NOT NULL DEFAULT '0',\
-				token VARCHAR(255) DEFAULT NULL)";
+				token VARCHAR(255) DEFAULT NULL, notify boolean)";
 	con.query(sql1, function (err, result) {
 		if (err) throw err;
 		console.log("Table1 created");
 	});
 	var sql = 'CREATE TABLE IF NOT EXISTS profile ( \
 			   id INT AUTO_INCREMENT PRIMARY KEY, \
-			   gender VARCHAR(255),\
 			   Preference VARCHAR(255),\
+			   interets VARCHAR(255),\
 			   City VARCHAR(255),\
 			   province VARCHAR(255), \
-			   zip VARCHAR(255),\
+			   zip VARCHAR(255), age VARCHAR(255),\
+			   image VARCHAR(255),\
 			   biography VARCHAR(255))';
 	con.query(sql, function (err, result) {
 		if (err) throw err;

@@ -19,7 +19,7 @@ router.get('/', function (req, res, next) {
 
 // con.connect()
 var Users = [];
-router.register = function (req, res) {
+router.post('/', function (req, res){ 
 
 	if (req.method == "POST") {
 		// console.log(req.body);
@@ -56,7 +56,7 @@ router.register = function (req, res) {
 						password = passwordHash.generate(req.body.userPassword);
 						var tok = passwordHash.generate(req.body.userName);
 						var sql = "INSERT INTO users (name, lastname, email, password,gender,token)\
-									 VALUES ('"+name+"','"+lastname+"','"+Uemail+"','"+password+"','"+gender+"','"+tok+"')";
+	         								 VALUES ('"+name+"','"+lastname+"','"+Uemail+"','"+password+"','"+gender+"','"+tok+"')";
 						con.query(sql, (err, result) => {
 							if (err) throw err;
 							var transporter = nodemailer.createTransport({
@@ -104,5 +104,5 @@ router.register = function (req, res) {
 	} else {
 		console.log("not post");
 	}
-};
+});
 module.exports = router
